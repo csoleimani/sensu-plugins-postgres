@@ -26,7 +26,7 @@ script:
 - gem build sensu-plugins-postgres.gemspec
 - gem install sensu-plugins-postgres-*.gem
 before_deploy:
-- bash -c "[ ! -d bonsai/ ] && git clone https://github.com/sensu/sensu-go-bonsai-asset.git bonsai || echo 'bonsai/ exists, skipping git clone'"
+- bash -c "[ ! -d bonsai/ ] && git clone https://github.com/csoleimani/sensu-go-bonsai-asset.git bonsai || echo 'bonsai/ exists, skipping git clone'"
 deploy:
 - provider: rubygems
   api_key:
