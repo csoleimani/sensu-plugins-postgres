@@ -96,7 +96,7 @@ class CheckPostgresQuery < Sensu::Plugin::Check::CLI
          description: 'Connection timeout (seconds)',
          short: '-T TIMEOUT',
          long: '--timeout TIMEOUT',
-         default: nil
+         default: 3
 
   include Pgpass
 

@@ -94,7 +94,7 @@ class CheckPostgresReplicationStatus < Sensu::Plugin::Check::CLI
   option(:timeout,
          short: '-T',
          long: '--timeout',
-         default: nil,
+         default: 3,
          description: 'Connection timeout (seconds)')
 
   include Pgpass
