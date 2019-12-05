@@ -7,7 +7,6 @@ before_install:
   - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
   - gem install bundler -v 1.17.3
   - 'sudo apt-get -y install libpq-dev'
-  - 'sudo yum install libpqxx-devel -y'
 install:
 - bundle install
 rvm:
